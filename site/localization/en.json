@@ -197,19 +197,19 @@
 		}
 	},
 	"donate": {
-		"donate": "",
-		"dont-show": "",
-		"hi": "",
-		"later": "",
-		"line-1": "",
-		"line-2": "",
-		"line-3": "",
-		"result": "",
-		"sorry": "",
+		"donate": "Donate",
+		"dont-show": "Don't show again",
+		"hi": "Hello",
+		"later": "Later",
+		"line-1": "My name is Andrei, I am one of the developers of the mod, and I see you have been visiting our site for {0} days, it seems you liked it",
+		"line-2": "The mod is completely free and the site contains no annoying ads.",
+		"line-3": "If you have the opportunity and desire, you can support us with a donation",
+		"result": "Thanks!",
+		"sorry": "I'm sorry for distracting",
 		"toast": {
-			"line-1": "",
-			"line-2": "",
-			"line-3": ""
+			"line-1": "Hey",
+			"line-2": "Hello",
+			"line-3": "<span>Click here -></span> <button class=\"btn-flat toast-action\">here</button>"
 		}
 	},
 	"download": {
