@@ -1,0 +1,514 @@
+{
+	"analytics": {
+		"charts": {
+			"add-chart": "Add chart",
+			"chart-settings": {
+				"charts": {
+					"avgShotDistancePerBattleTimer": "Average shooting distance by timer",
+					"avgShotDistancePerDate": "Average shooting distance by date",
+					"avgShotDistancePerMap": "Average shooting distance by map",
+					"axes": {
+						"battle-count": "Number of battles",
+						"battle-timer": "Battle timer",
+						"battles": "Battles",
+						"date": "Date",
+						"dispersion": "Dispersion",
+						"dispersion-percent": "Aim circle size (percent)",
+						"distance": "Distance",
+						"map": "Map",
+						"player-battle-count": "Player's battles",
+						"player-count": "Number of players",
+						"shot-count": "Number of shots",
+						"shot-per-battle": "Shots per battle",
+						"shot-percent": "Percentage of shots",
+						"shots": "Shots",
+						"tank": "Tank"
+					},
+					"battlePerDate": "Battle by date",
+					"battlePerMap": "Battle by map",
+					"battlePerTank": "Battle by tank",
+					"dispersionOnShotBattleTimer": "Aim circle size by timer",
+					"dispersionOnShotPerDate": "Aim circle size by date",
+					"dispersionOnShotPerMap": "Aim circle size by map",
+					"newPlayerPerDate": "New players by date",
+					"playerBatllePerDate": "Average number of battles by date",
+					"playerPerDate": "Players by date",
+					"shotBattlePerDate": "Shots per battle by date",
+					"shotBattlePerMap": "Shots per battle by map",
+					"shotBattlePerTank": "Battle shots by tank",
+					"shotPerBattleTimer": "Shot by timer",
+					"shotPerDate": "Shot by date",
+					"shotPerDensity": "Density by dispersion",
+					"shotPerDispersion": "Distribution by dispersion",
+					"shotPerMap": "Shot by map",
+					"shotPerTank": "Shot by tank"
+				},
+				"group": {
+					"battles": "Battles",
+					"dispersion-aimingcircle": "Dispersion",
+					"players": "Players",
+					"shot-distance": "Shooting distance",
+					"shots": "Shots"
+				},
+				"settings": {
+					"Bar": "Bar",
+					"Line": "Line",
+					"axes-variant": {
+						"absolute": "Absolute",
+						"relative": "Relative"
+					},
+					"axes-y": "Y-Axis",
+					"chartVariant": "Graph type",
+					"limit": {
+						"all": "All",
+						"first-10": "First 10",
+						"first-20": "First 20",
+						"first-50": "First 50",
+						"last-10": "Last 10",
+						"last-20": "Last 20",
+						"last-50": "Last 50"
+					},
+					"limiter": "Limit",
+					"sort-by": {
+						"alphabetically": "Alphabetically",
+						"amount": "Sum",
+						"delta": "Differences",
+						"first-count": "First count"
+					},
+					"sortBy": "Sort by",
+					"step": "Graph step",
+					"time": {
+						"day": "Day",
+						"hour": "Hour",
+						"min": "Minute",
+						"month": "Month",
+						"sec-1": "1 second",
+						"sec-10": "10 seconds",
+						"sec-30": "30 seconds",
+						"sec-5": "5 seconds",
+						"week": "Week",
+						"year": "Year"
+					}
+				}
+			},
+			"max-charts": "Maximum charts",
+			"select-chart-type": "Choose a chart type",
+			"show": "Display",
+			"to-many-points": "You are trying to display {0} points, this may negatively affect performance"
+		},
+		"inspector": {
+			"add-filter": "Add filter",
+			"color": "Color:",
+			"filters": {
+				"add-button": {
+					"battleMode": "Battle mode",
+					"clanName": "Clan",
+					"date": "Date",
+					"mapId": "Map",
+					"oneTankEquipment": "Equipment module",
+					"playerName": "Nickname",
+					"region": "Region",
+					"shellType": "Shell type",
+					"tankEquipment": "Equipment set",
+					"tankId": "Tank",
+					"tankLvl": "Tank's level",
+					"tankNation": "Tank's nation",
+					"tankType": "Tank's type"
+				},
+				"filter": {
+					"clan": {
+						"empty": "without clan",
+						"enter-tag": "Enter clan tag"
+					},
+					"date": {
+						"label": "Date span"
+					},
+					"equipment": {
+						"empty": "Nothing Selected",
+						"equipments": {
+							"any": "Any",
+							"empty": "Empty slot",
+							"none": "No slot"
+						},
+						"lable": "Equipment",
+						"select-equipment": "Choose equipment",
+						"single": "Equipment (any slot)",
+						"sort-metter": "The order of the slots matters"
+					},
+					"map": {
+						"chose-map": "Select maps",
+						"empty": "No map selected",
+						"remove-selected": "Remove selected",
+						"select-all": "Select All"
+					},
+					"nickname": {
+						"enter-name": "Enter nickname"
+					},
+					"shell": {
+						"info": "For battles: at least one shot with a given type"
+					},
+					"tank": {
+						"chose-tank": "Choose a tank",
+						"empty": "No tank selected",
+						"label": "Tanks",
+						"level": "Level",
+						"name": "name",
+						"search": "Search:",
+						"tankType": "Tank type"
+					}
+				}
+			},
+			"refresh": "Refresh",
+			"selection-settings": "Sample settings"
+		},
+		"presets": {
+			"card": {
+				"battle": "Battles: {0}",
+				"cache": "Cached: {0}",
+				"shots": "Shots: {0}"
+			},
+			"max-preset": "Max presets: {0}",
+			"selection": "Sample {0}"
+		}
+	},
+	"common": {
+		"add": "Add",
+		"bool": {
+			"false": "false",
+			"true": "true"
+		},
+		"date": {
+			"from": "From",
+			"period": {
+				"label": "Period:",
+				"this-day": "This day",
+				"this-hour": "This hour",
+				"this-month": "This month",
+				"this-week": "This week"
+			},
+			"to": "To"
+		},
+		"done": "Done",
+		"name": "Name:",
+		"select": "Choose",
+		"units": {
+			"distance": "m",
+			"speed": "m/s"
+		}
+	},
+	"donate": {
+		"donate": "",
+		"dont-show": "",
+		"hi": "",
+		"later": "",
+		"line-1": "",
+		"line-2": "",
+		"line-3": "",
+		"result": "",
+		"sorry": "",
+		"toast": {
+			"line-1": "",
+			"line-2": "",
+			"line-3": ""
+		}
+	},
+	"download": {
+		"download": {
+			"corrected": "Mod approved by Wargaming moderators.",
+			"donate": "donate",
+			"download-version": "download (version {0})",
+			"free-mod": "The mod absolutely free, with no ads or hidden miners, so you can",
+			"fromSite": "Direct link",
+			"fromWGMods": "From the game portal",
+			"header": "Download",
+			"wgMods-not-work": "In case WGMods doesn't work.",
+			"wgmods-recomendate": "WGmods (recommended)"
+		},
+		"install": {
+			"header": "Installing",
+			"step1": "1. Download the mod.wotStat.wotmod file from the link above",
+			"step2": "2. Move it to /World_of_Tanks_RU<wbr>/<b>mods</b><wbr>/[CURRENT GAME VERSION]/.",
+			"warning1": "Note that the mod is installed in the <b>/mods/</b> folder, and not <b>/resmods/</b> as it was before.",
+			"warning2": "Please note that you need to install it in the <b>current</b> version of the game. Many modpacks in the <b>/mods/</b> folder create versions \"for future\", for example, with the current version <b>1.12.0.0</b>, modpacks can create a folder <b>1.12.0.1</b> ."
+		}
+	},
+	"exeption": {
+		"outdated-mod-version": {
+			"label": "Outdated mod version",
+			"update": "Update"
+		},
+		"unknownError": "Something went wrong"
+	},
+	"game": {
+		"arenas": {
+			"01_karelia": "karelia",
+			"02_malinovka": "malinovka",
+			"03_campania_big": "campania big",
+			"04_himmelsdorf": "himmelsdorf",
+			"05_prohorovka": "prohorovka",
+			"06_ensk": "ensk",
+			"07_lakeville": "lakeville",
+			"08_ruinberg": "ruinberg",
+			"101_dday": "dday",
+			"105_germany": "germany",
+			"10_hills": "hills",
+			"112_eiffel_tower_ctf": "eiffel tower ctf",
+			"114_czech": "czech",
+			"115_sweden": "sweden",
+			"11_murovanka": "murovanka",
+			"120_graf_zeppelin_ish": "graf zeppelin ish",
+			"123_dalny_gg": "dalny gg",
+			"128_last_frontier_v": "last frontier v",
+			"13_erlenberg": "erlenberg",
+			"14_siegfried_line": "siegfried line",
+			"17_munchen": "munchen",
+			"18_cliff": "cliff",
+			"19_monastery": "monastery",
+			"217_er_alaska": "er alaska",
+			"222_er_clime": "er clime",
+			"23_westfeld": "westfeld",
+			"250_br_battle_city2-1": "br battle city2",
+			"251_br_battle_city3": "br battle city3",
+			"28_desert": "desert",
+			"29_el_hallouf": "el_hallouf",
+			"31_airfield": "airfield",
+			"33_fjord": "fjord",
+			"34_redshire": "redshire",
+			"35_steppes": "steppes",
+			"36_fishing_bay": "fishing bay",
+			"37_caucasus": "caucasus",
+			"38_mannerheim_line": "mannerheim line",
+			"44_north_america": "north america",
+			"45_north_america": "north america",
+			"47_canada_a": "canada a",
+			"59_asia_great_wall": "asia great wall",
+			"60_asia_miao": "asia miao",
+			"63_tundra": "tundra",
+			"83_kharkiv": "kharkiv",
+			"90_minsk": "minsk",
+			"95_lost_city_ctf": "lost city ctf",
+			"99_poland": "poland"
+		},
+		"battleMode": {
+			"BOOTCAMP": "Bootcamp",
+			"GLOBAL_MAP": "Global map",
+			"REGULAR": "Regular"
+		},
+		"region": {
+			"asia": "asia",
+			"eu": "eu",
+			"na": "na",
+			"ru": "ru"
+		},
+		"tanks": {
+			"equipments": {
+				"additInvisibilityDevice": "addit Invisibility Device",
+				"additionalInvisibilityDevice": "additional Invisibility Device",
+				"aimingStabilizer": "aiming Stabilizer",
+				"antifragmentationLining": "antifragmentation Lining",
+				"camouflageNet": "camouflage Net",
+				"coatedOptics": "coated Optics",
+				"commandersView": "commanders View",
+				"deluxeTurbocharger": "deluxe Turbocharger",
+				"enhancedAimDrives": "enhanced Aim Drives",
+				"extraHealthReserve": "extra Health Reserve",
+				"grousers": "grousers",
+				"improvedConfiguration": "improved Configuration",
+				"improvedRadioCommunication": "improved Radio Communication",
+				"improvedRotationMechanism": "improved Rotation Mechanism",
+				"improvedSights": "improved Sights",
+				"improvedVentilation": "improvedVentilation",
+				"stereoscope": "stereoscope",
+				"tankRammer": "tank Rammer",
+				"trophyBasicImprovedRotationMechanism": "Trophy basic improved rotation mechanism",
+				"trophyUpgradedImprovedRotationMechanism": "Trophy upgraded improved rotation mechanism",
+				"turbocharger": "turbocharger"
+			},
+			"nations": {
+				"china": "China",
+				"czech": "Czech",
+				"france": "France",
+				"germany": "Germany",
+				"italy": "Italy",
+				"japan": "Japan",
+				"label": "Nation",
+				"poland": "Poland",
+				"sweden": "Sweden",
+				"uk": "UK",
+				"usa": "USA",
+				"ussr": "USSR"
+			},
+			"shell-type": {
+				"AP": "AP",
+				"APCR": "APCR",
+				"HC": "HC",
+				"HE": "HE"
+			},
+			"tank-type": {
+				"AT": "AT",
+				"HT": "HT",
+				"LT": "LT",
+				"MT": "MT",
+				"SPG": "SPG"
+			}
+		}
+	},
+	"info": {
+		"description": {
+			"analytics": "analytics",
+			"label": "Description",
+			"line-1": "The site displays statistics collected by users who installed the mod.",
+			"line-2": "Section {statisticsLink} displays the last battles played with the installed mod. For each battle you can see where the shells intersect aiming circle.",
+			"line-3": "Section {analyticsLink} allows you to draw analytical charts for different samples.",
+			"mod-name": "WOT Stat",
+			"statistics": "statistics"
+		},
+		"developers": {
+			"StranikS_Scan": "StranikS_Scan for help in developing the mod",
+			"andrei": "Andrei {'|'} soprachev{'@'}mail.ru",
+			"artem": "Artem",
+			"label": "Developers",
+			"thanks": "Acknowledgements"
+		},
+		"donate": {
+			"donate-link": "donate",
+			"label": "Donations",
+			"line-1": "This mod and the site are distributed absolutely free, without ads and trackers, if you want to support us, you can {sendDonateLink}. If you write your game nickname in the name of the donate, then the sponsor's icon will appear in the statistics section next to the nickname."
+		},
+		"download": {
+			"label": "Download",
+			"line-1": "{versionLink}",
+			"version-link": "Version {0}"
+		},
+		"info": {
+			"dispersion-info": "How {dispersion} works and why convergence is a myth.",
+			"dispersion-link": "dispersion",
+			"label": "Interesting information"
+		},
+		"install": {
+			"header": "@:download.install.header"
+		},
+		"issues": {
+			"issues-1-description": "The sequence of shells from machine-gun tanks is distributed in time, from the moment of the shot, both the marker point and the aiming circle size can change, however, you can only track the shell before the shot by pressing the LMB, which in the case of machine-gun guns only works for the first shot.",
+			"issues-1-label": "Machine gun tank shot tracking does not work",
+			"label": "Issues"
+		},
+		"plan": {
+			"donate": "<b> Already collected {0}/100000 rub, ({1})%</b> (may seem like a lot, but programmers are expensive these days)",
+			"label": "Development plan",
+			"line-1": "At the set of a certain amount of donations, I suspend my projects and start designing a new version of the mod, which will include at least:",
+			"result": "Based on the information received, a large number of graphs will be added. There are plans (possibly for the current version) to add a <b> heat map </b> graph view, on which it will be possible to watch the movement and shots according to the existing filters.",
+			"step-1": {
+				"label": "1. Pre-battle statistics",
+				"line-1": "Clan",
+				"line-2": "Team BB"
+			},
+			"step-2": {
+				"label": "2. Intra-combat statistics",
+				"line-1": "Damage",
+				"line-2": "Damaged modules",
+				"line-3": "Tank progress",
+				"line-4": "Battle mode",
+				"line-5": "Base"
+			},
+			"step-3": {
+				"label": "3. Post-battle statistics",
+				"line-1": "Full battle results"
+			}
+		},
+		"roadmap": {
+			"label": "Roadmap",
+			"step-1": "1. Write a roadmap"
+		},
+		"version-history": "Version history"
+	},
+	"localization": {
+		"warning": {
+			"body": "At the moment there may be some errors in the English localization, if you want to fix them, you can do it on the project's {localizationLink}",
+			"close": "Ok",
+			"localization-link": "GitHub page",
+			"title": "Localization issues"
+		}
+	},
+	"nav": {
+		"Main": "Statistics",
+		"analytics": "Analytics",
+		"donate": "Donate",
+		"download": "Download",
+		"info": "Information"
+	},
+	"statistics": {
+		"battle": {
+			"battle-shot-empty": "You did not shoot in this battle.",
+			"date": "Date:",
+			"filter": {
+				"all": "All players",
+				"enter-date": "Enter the date",
+				"lable": "Search filter",
+				"nickname": "Player nick",
+				"search": "Search"
+			},
+			"map": "Map:",
+			"nickname": "Nick:",
+			"select-battle": "Select battle",
+			"shared": {
+				"add-all": "Select all",
+				"battle": "battle | battles",
+				"label": "General",
+				"load": "Load:",
+				"refresh": "@:analytics.inspector.refresh",
+				"remove-selection": "Remove selected"
+			},
+			"shots": "Shots:",
+			"tank": "Tank:"
+		},
+		"info": {
+			"chart": {
+				"bar": "@:analytics.charts.chart-settings.settings.Bar",
+				"calculate": "Calculation method:",
+				"chart-type": "@:analytics.charts.chart-settings.settings.chartVariant:",
+				"density": "Density",
+				"dispersion": "Distribution",
+				"line": "@:analytics.charts.chart-settings.settings.Line",
+				"step": "Number of bars:"
+			},
+			"multi-shots": {
+				"battle-count": "Selected battles:",
+				"min-dispersion-count": "With minimum aim circle size:",
+				"quantile": "{quantile}% of shots accounted for {count}% of the dispersion",
+				"quantile-single-selected": "@:statistics.info.multi-shots.quantile in the selected battle",
+				"share": "The link copied to the clipboard",
+				"shots-count": "Total shots:"
+			},
+			"settings": {
+				"battle-preview": "@:statistics.info.settings.show battle preview",
+				"devices": "@:statistics.info.settings.show equipment",
+				"gun-dist": "@:statistics.info.settings.show dispersion by characteristics",
+				"label": "Display settings",
+				"mini-map": "@:statistics.info.settings.show minimap",
+				"own-disp": "@:statistics.info.settings.show-min-disp shot",
+				"quant-enable": "@:statistics.info.settings.show {kvant}% quantile",
+				"sho-hist": "@:statistics.info.settings.show distribution chart",
+				"shot-list": "@:statistics.info.settings.show shot list",
+				"show": "Display",
+				"show-min-disp": "@:statistics.info.settings.show min dispersion by",
+				"start-own-disp": "@:statistics.info.settings.show-min-disp battle start"
+			},
+			"single-shot": {
+				"aiming-circle": "Aim circle size:",
+				"auto-aim": "Auto aim:",
+				"dispersion-percent": "Aim circle size (percent)",
+				"distance": "Distance:",
+				"gun-dispersion": "Gun dispersion:",
+				"ms": "ms",
+				"ping": "Ping:",
+				"server-aim": "Server aim:",
+				"shell-name": "Shell name:",
+				"shell-type": "Shell type:",
+				"shot-time": "Shot time:",
+				"shot-velocity": "Velocity:",
+				"tank-dispersion": "Tank dispersion:"
+			}
+		}
+	}
+}

@@ -1,0 +1,514 @@
+{
+	"analytics": {
+		"charts": {
+			"add-chart": "Добавьте график",
+			"chart-settings": {
+				"charts": {
+					"avgShotDistancePerBattleTimer": "Средняя дистанция стрельбы от таймера боя",
+					"avgShotDistancePerDate": "Средняя дистанция стрельбы от даты",
+					"avgShotDistancePerMap": "Средняя дистанция стрельбы от карты",
+					"axes": {
+						"battle-count": "Кол-во боёв",
+						"battle-timer": "Таймер боя",
+						"battles": "Бои",
+						"date": "Дата",
+						"dispersion": "Разброс",
+						"dispersion-percent": "Процент от полного сведения",
+						"distance": "Расстояние",
+						"map": "Карта",
+						"player-battle-count": "Боёв у игроков",
+						"player-count": "Кол-во игроков",
+						"shot-count": "Кол-во выстрелов",
+						"shot-per-battle": "Выстрелы за бой",
+						"shot-percent": "Процент выстрелов",
+						"shots": "Выстрелы",
+						"tank": "Танк"
+					},
+					"battlePerDate": "Бои от даты",
+					"battlePerMap": "Бои от карты",
+					"battlePerTank": "Бои от танка",
+					"dispersionOnShotBattleTimer": "Сведение от таймера боя",
+					"dispersionOnShotPerDate": "Сведение от даты",
+					"dispersionOnShotPerMap": "Сведение от карты",
+					"newPlayerPerDate": "Новые игроки от даты",
+					"playerBatllePerDate": "Среднее кол-во боёв от даты",
+					"playerPerDate": "Игроки от даты",
+					"shotBattlePerDate": "Выстрелы за бой от даты",
+					"shotBattlePerMap": "Выстрелы за бой от карты",
+					"shotBattlePerTank": "Выстрелы за бой от танка",
+					"shotPerBattleTimer": "Выстрелы от таймера боя",
+					"shotPerDate": "Выстрелы от даты",
+					"shotPerDensity": "Плотность от разброса",
+					"shotPerDispersion": "Распределение от разброса",
+					"shotPerMap": "Выстрелы от карты",
+					"shotPerTank": "Выстрелы от танка"
+				},
+				"group": {
+					"battles": "Бои",
+					"dispersion-aimingcircle": "Разброс и сведение",
+					"players": "Игроки",
+					"shot-distance": "Дистанция стрельбы",
+					"shots": "Выстрелы"
+				},
+				"settings": {
+					"Bar": "Столбик",
+					"Line": "Линия",
+					"axes-variant": {
+						"absolute": "Абсолютная",
+						"relative": "Относительная"
+					},
+					"axes-y": "Ось Y",
+					"chartVariant": "Тип графика",
+					"limit": {
+						"all": "Все",
+						"first-10": "Первые 10",
+						"first-20": "Первые 20",
+						"first-50": "Первые 50",
+						"last-10": "Последние 10",
+						"last-20": "Последние 20",
+						"last-50": "Последние 50"
+					},
+					"limiter": "Лимит",
+					"sort-by": {
+						"alphabetically": "Алфавиту",
+						"amount": "Сумме",
+						"delta": "Разности",
+						"first-count": "Количеству 1-го"
+					},
+					"sortBy": "Упорядочить по",
+					"step": "Шаг графика",
+					"time": {
+						"day": "День",
+						"hour": "Час",
+						"min": "Минута",
+						"month": "Месяц",
+						"sec-1": "1 секунда",
+						"sec-10": "10 секунд",
+						"sec-30": "30 секунд",
+						"sec-5": "5 секунд",
+						"week": "Неделя",
+						"year": "Год"
+					}
+				}
+			},
+			"max-charts": "Максимум графиков",
+			"select-chart-type": "Выбери тип графика",
+			"show": "Отобразить",
+			"to-many-points": "Вы пытаетесь отобразить на графике {0} точек, это может негативно сказаться на производительности"
+		},
+		"inspector": {
+			"add-filter": "Добавить фильтр",
+			"color": "Цвет:",
+			"filters": {
+				"add-button": {
+					"battleMode": "Режим боя",
+					"clanName": "Клан",
+					"date": "Дата",
+					"mapId": "Карта",
+					"oneTankEquipment": "Модуль оборудования",
+					"playerName": "Ник",
+					"region": "Регион",
+					"shellType": "Тип снаряда",
+					"tankEquipment": "Сет оборудования",
+					"tankId": "Танк",
+					"tankLvl": "Уровень танка",
+					"tankNation": "Нация танка",
+					"tankType": "Тип танка"
+				},
+				"filter": {
+					"clan": {
+						"empty": "без клана",
+						"enter-tag": "Введите тег клана"
+					},
+					"date": {
+						"label": "Промежуток даты"
+					},
+					"equipment": {
+						"empty": "Ничего не выбрано",
+						"equipments": {
+							"any": "Любой",
+							"empty": "Пустой слот",
+							"none": "Нет слота"
+						},
+						"lable": "Оборудование",
+						"select-equipment": "Выбери оборудование",
+						"single": "Оборудование (любой слот)",
+						"sort-metter": "Порядок слотов имеет значение"
+					},
+					"map": {
+						"chose-map": "Выбери карты",
+						"empty": "Ни одна карта не выбрана",
+						"remove-selected": "Снять выделение",
+						"select-all": "Выделить всё"
+					},
+					"nickname": {
+						"enter-name": "Введите ник"
+					},
+					"shell": {
+						"info": "Для боёв: хотя бы один выстрел с заданным типом"
+					},
+					"tank": {
+						"chose-tank": "Выбери танк",
+						"empty": "Ни один танк не выбран",
+						"label": "Танки",
+						"level": "Уровень",
+						"name": "Название",
+						"search": "Поиск:",
+						"tankType": "Тип"
+					}
+				}
+			},
+			"refresh": "Обновить",
+			"selection-settings": "Настройки выборки"
+		},
+		"presets": {
+			"card": {
+				"battle": "Боёв: {0}",
+				"cache": "Кеш: {0}",
+				"shots": "Выстрелов: {0}"
+			},
+			"max-preset": "Максимум пресетов: {0}",
+			"selection": "Выборка {0}"
+		}
+	},
+	"common": {
+		"add": "Добавить",
+		"bool": {
+			"false": "нет",
+			"true": "да"
+		},
+		"date": {
+			"from": "От",
+			"period": {
+				"label": "Период",
+				"this-day": "Этот день",
+				"this-hour": "Этот час",
+				"this-month": "Этот месяц",
+				"this-week": "Эта неделя"
+			},
+			"to": "До"
+		},
+		"done": "Готово",
+		"name": "Название:",
+		"select": "Выбрать",
+		"units": {
+			"distance": "м",
+			"speed": "м/с"
+		}
+	},
+	"donate": {
+		"donate": "Поддержать",
+		"dont-show": "Больше не показывать",
+		"hi": "Привет",
+		"later": "Потом",
+		"line-1": "Меня зовут Андрей, я один из разработчиков мода, и я смотрю ты заходишь на наш сайт уже {0} дней, кажется он тебе понравился",
+		"line-2": "Мод полностью бесплатный, а сайт не содержит раздражающей рекламы.",
+		"line-3": "Если у тебя есть возможность и желание, можешь поддержать нас донатиком",
+		"result": "Спасибо!",
+		"sorry": "Прости что отвлекаю",
+		"toast": {
+			"line-1": "Псс",
+			"line-2": "Привет",
+			"line-3": "<span>Нажми туда -></span> <button class=\"btn-flat toast-action\">сюда</button>"
+		}
+	},
+	"download": {
+		"download": {
+			"corrected": "Мод проверен модераторами Wargaming.",
+			"donate": "поддержать проект",
+			"download-version": "скачать (версия {0})",
+			"free-mod": "Мод полностью бесплатный, без рекламы и скрытых майнеров, так что можете",
+			"fromSite": "Прямая сслыка",
+			"fromWGMods": "С портала игры",
+			"header": "Скачать",
+			"wgMods-not-work": "На случай если WGMods не работает.",
+			"wgmods-recomendate": "WGmods (рекомендуется)"
+		},
+		"install": {
+			"header": "Установка",
+			"step1": "1. Скачать файл mod.wotStat.wotmod по ссылке выше",
+			"step2": "2. Переместить его в директорию /World_of_Tanks_RU<wbr>/<b>mods</b><wbr>/[ТЕКУЩАЯ ВЕРСИЯ ИГРЫ]/",
+			"warning1": "Обратите внимание, что мод устанавливается в папку <b>/mods/</b>, а не <b>/resmods/</b> как это было раньше.",
+			"warning2": "Обратите внимание, устанавливать надо в <b>актуальную</b> версию игры. Многие модпаки в папке <b>/mods/</b> создают версии \"на будущие\", например при актуальной версии <b>1.12.0.0</b>, модпаки могут создать папку <b>1.12.0.1</b>."
+		}
+	},
+	"exeption": {
+		"outdated-mod-version": {
+			"label": "Устаревшая версия мода",
+			"update": "Обновить"
+		},
+		"unknownError": "Ой, что то пошло не так"
+	},
+	"game": {
+		"arenas": {
+			"01_karelia": "карелия",
+			"02_malinovka": "малиновка",
+			"03_campania_big": "провинция",
+			"04_himmelsdorf": "химмельсдорф",
+			"05_prohorovka": "прохоровка",
+			"06_ensk": "энск",
+			"07_lakeville": "ласвилль",
+			"08_ruinberg": "руинберг",
+			"101_dday": "оверлорд",
+			"105_germany": "берлин",
+			"10_hills": "рудники",
+			"112_eiffel_tower_ctf": "париж",
+			"114_czech": "промзона",
+			"115_sweden": "штиль",
+			"11_murovanka": "мурованка",
+			"120_graf_zeppelin_ish": "graf zeppelin",
+			"123_dalny_gg": "dalny gg",
+			"128_last_frontier_v": "last frontier",
+			"13_erlenberg": "эрленберг",
+			"14_siegfried_line": "линия Зигфрида",
+			"17_munchen": "уайдпарк",
+			"18_cliff": "утес",
+			"19_monastery": "монастырь",
+			"217_er_alaska": "alaska",
+			"222_er_clime": "clime",
+			"23_westfeld": "вестфилд",
+			"250_br_battle_city2-1": "зона 404",
+			"251_br_battle_city3": "арзагир 4.04",
+			"28_desert": "песчаная река",
+			"29_el_hallouf": "эль-Халлуф",
+			"31_airfield": "аэродром",
+			"33_fjord": "фьорды",
+			"34_redshire": "редшир",
+			"35_steppes": "степи",
+			"36_fishing_bay": "рыбацкая бухта",
+			"37_caucasus": "перевал",
+			"38_mannerheim_line": "линия Маннергейма",
+			"44_north_america": "лайв Окс",
+			"45_north_america": "хайвей",
+			"47_canada_a": "тихий берег",
+			"59_asia_great_wall": "граница империи",
+			"60_asia_miao": "жемчужная река",
+			"63_tundra": "тундра",
+			"83_kharkiv": "харьков",
+			"90_minsk": "минск",
+			"95_lost_city_ctf": "затерянный город",
+			"99_poland": "студзянки"
+		},
+		"battleMode": {
+			"BOOTCAMP": "Танковый полигон",
+			"GLOBAL_MAP": "Глобальная карта",
+			"REGULAR": "Стандартный бой"
+		},
+		"region": {
+			"asia": "asia",
+			"eu": "eu",
+			"na": "na",
+			"ru": "ru"
+		},
+		"tanks": {
+			"equipments": {
+				"additInvisibilityDevice": "addit малошумная система выхлопа",
+				"additionalInvisibilityDevice": "малошумная система выхлопа",
+				"aimingStabilizer": "стабилизатор вертикальной наводки",
+				"antifragmentationLining": "противоосколочный подбой",
+				"camouflageNet": "маскировочная сеть",
+				"coatedOptics": "просветлённая оптика",
+				"commandersView": "командирский обзорный прибор",
+				"deluxeTurbocharger": "deluxe Turbocharger",
+				"enhancedAimDrives": "усиленные приводы наводки",
+				"extraHealthReserve": "улучшенная закалка",
+				"grousers": "grousers",
+				"improvedConfiguration": "improved Configuration",
+				"improvedRadioCommunication": "улучшенное радиооборудование",
+				"improvedRotationMechanism": "улучшенный механизм поворота",
+				"improvedSights": "improved Sights",
+				"improvedVentilation": "улучшенная вентиляция",
+				"stereoscope": "стереотруба",
+				"tankRammer": "досылатель",
+				"trophyBasicImprovedRotationMechanism": "Трофейный базовый механизм поворота",
+				"trophyUpgradedImprovedRotationMechanism": "Трофейный улучшенный механизм поворота",
+				"turbocharger": "турбонагнетатель"
+			},
+			"nations": {
+				"china": "Китай",
+				"czech": "Чехословакия",
+				"france": "Франция",
+				"germany": "Германия",
+				"italy": "Италия",
+				"japan": "Япония",
+				"label": "Нация",
+				"poland": "Польша",
+				"sweden": "Швеция",
+				"uk": "Великобритания",
+				"usa": "США",
+				"ussr": "СССР"
+			},
+			"shell-type": {
+				"AP": "AP",
+				"APCR": "APCR",
+				"HC": "HC",
+				"HE": "HE"
+			},
+			"tank-type": {
+				"AT": "ПТ",
+				"HT": "ТТ",
+				"LT": "ЛТ",
+				"MT": "СТ",
+				"SPG": "САУ"
+			}
+		}
+	},
+	"info": {
+		"description": {
+			"analytics": "аналитика",
+			"label": "Описание",
+			"line-1": "Сайт отображает статистику собранную пользователями установившими мод.",
+			"line-2": "Раздел {statisticsLink} отображает последние бои сыгранные с установленным модом. По каждому бою можно посмотреть куда полетели снаряды относительно круга сведения.",
+			"line-3": "Раздел {analyticsLink} позволяет стоить аналитические графики по разным выборкам.",
+			"mod-name": "WOT Stat",
+			"statistics": "статистика"
+		},
+		"developers": {
+			"StranikS_Scan": "StranikS_Scan за помощь в разработке мода",
+			"andrei": "Андрей {'|'} soprachev{'@'}mail.ru",
+			"artem": "Артём",
+			"label": "Разработчики",
+			"thanks": "Благодарность"
+		},
+		"donate": {
+			"donate-link": "отправить донат",
+			"label": "Донаты",
+			"line-1": "Данный мод и сайт распространяются абсолютно бесплатно, без рекламы и трекеров, если вы хотите поддержать нас, можете {sendDonateLink}. Если напишите в имени доната свой игровой ник, то в разделе статистики рядом с ником появится пиктограмма спонсора."
+		},
+		"download": {
+			"label": "Скачать",
+			"line-1": "{versionLink}",
+			"version-link": "Версия {0}"
+		},
+		"info": {
+			"dispersion-info": "Как работает {dispersion} и почему сведение — миф.",
+			"dispersion-link": "разброс",
+			"label": "Интересная информация"
+		},
+		"install": {
+			"header": "@:download.install.header"
+		},
+		"issues": {
+			"issues-1-description": "Очередь снарядов пулемётных танков распределена во времени, с момента выстрела, как точка маркера, так и разброс могут измениться, однако отследить снаряд до выстрела можно только по нажатию ЛКМ, что в случае с пулемётными орудиями работает только для первой пули.",
+			"issues-1-label": "Не работает отслеживание выстрелов пулемётных танков",
+			"label": "Известные проблемы"
+		},
+		"plan": {
+			"donate": "<b> Уже собрано {0}/100000 рублей, ({1})%</b> (может показаться что много, однако программисты нынче дорогие)",
+			"label": "План развития",
+			"line-1": "При наборе определённой суммы пожертвований, я приостанавливаю свои проекты и начинаю проектирование новой версии мода, которая будет включать как минимум:",
+			"result": "На основе полученной информации будет добавлено большое количество графиков. В планах (возможно на текущую версию) добавление вида графика <b>тепловая карта</b>, на которой можно будет смотреть перемещение и выстрелы согласно существующим фильтрам.",
+			"step-1": {
+				"label": "1. Добоевая статистика",
+				"line-1": "Клан",
+				"line-2": "Команда ББ"
+			},
+			"step-2": {
+				"label": "2. Внутрибоевая статистика",
+				"line-1": "Нанесённый урон",
+				"line-2": "Повреждённые модули",
+				"line-3": "Модернизация танка",
+				"line-4": "Режим боя",
+				"line-5": "База"
+			},
+			"step-3": {
+				"label": "3. Послебоевая статистика",
+				"line-1": "Полные результаты боя"
+			}
+		},
+		"roadmap": {
+			"label": "Roadmap",
+			"step-1": "1. Написать roadmap"
+		},
+		"version-history": "История версий"
+	},
+	"localization": {
+		"warning": {
+			"body": "В данный момент в локализации на английский язык могут присутствовать ошибки, если у вас есть желание их исправить, можете сделать это на страницы проекта на гитхаб {localizationLink}",
+			"close": "Понятно",
+			"localization-link": "Github",
+			"title": "Ошибки в локализации"
+		}
+	},
+	"nav": {
+		"Main": "Статистика",
+		"analytics": "Аналитика",
+		"donate": "Поддержать разработчиков",
+		"download": "Скачать",
+		"info": "Информация"
+	},
+	"statistics": {
+		"battle": {
+			"battle-shot-empty": "В этом бою вы не стреляли",
+			"date": "Дата:",
+			"filter": {
+				"all": "Все игроки",
+				"enter-date": "Введите дату",
+				"lable": "Фильтр поиска",
+				"nickname": "Ник игрока",
+				"search": "Искать"
+			},
+			"map": "Карта:",
+			"nickname": "Имя:",
+			"select-battle": "Выбери бой",
+			"shared": {
+				"add-all": "Добавить все",
+				"battle": "бой | боёв",
+				"label": "Общие",
+				"load": "Загружать:",
+				"refresh": "@:analytics.inspector.refresh",
+				"remove-selection": "Отменить выбор"
+			},
+			"shots": "Выстрелов:",
+			"tank": "Танк:"
+		},
+		"info": {
+			"chart": {
+				"bar": "@:analytics.charts.chart-settings.settings.Bar",
+				"calculate": "Способ расчета:",
+				"chart-type": "@:{'analytics.charts.chart-settings.settings.chartVariant'}:",
+				"density": "Плотность",
+				"dispersion": "Распределение",
+				"line": "@:analytics.charts.chart-settings.settings.Line",
+				"step": "Количество столбцов:"
+			},
+			"multi-shots": {
+				"battle-count": "Выбрано боёв:",
+				"min-dispersion-count": "С полным сведением:",
+				"quantile": "{quantile}% выстрелов попало в {count}% разброса",
+				"quantile-single-selected": "@:statistics.info.multi-shots.quantile в выбранном бою",
+				"share": "Ссылка скопирована в буфер обмена",
+				"shots-count": "Всего выстрелов:"
+			},
+			"settings": {
+				"battle-preview": "@:statistics.info.settings.show превью боя",
+				"devices": "@:statistics.info.settings.show снаряжение",
+				"gun-dist": "@:statistics.info.settings.show разброс ТТХ",
+				"label": "Настройки отображения",
+				"mini-map": "@:statistics.info.settings.show миникарту",
+				"own-disp": "@:statistics.info.settings.show-min-disp выстрела",
+				"quant-enable": "@:statistics.info.settings.show {kvant}% квантиль",
+				"sho-hist": "@:statistics.info.settings.show график распределения",
+				"shot-list": "@:statistics.info.settings.show список выстрелов",
+				"show": "Отображать",
+				"show-min-disp": "@:statistics.info.settings.show минимальный разброс на момент",
+				"start-own-disp": "@:statistics.info.settings.show-min-disp старта боя"
+			},
+			"single-shot": {
+				"aiming-circle": "Сведение:",
+				"auto-aim": "Автоприцел:",
+				"dispersion-percent": "Процент сведения:",
+				"distance": "Расстояние:",
+				"gun-dispersion": "Разброс орудия:",
+				"ms": "мс",
+				"ping": "Пинг:",
+				"server-aim": "Серверный прицел:",
+				"shell-name": "Название снаряда:",
+				"shell-type": "Тип снаряда:",
+				"shot-time": "Время выстрела:",
+				"shot-velocity": "Скорость:",
+				"tank-dispersion": "Разброс танка:"
+			}
+		}
+	}
+}
