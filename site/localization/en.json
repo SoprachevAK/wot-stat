@@ -22,7 +22,10 @@
 						"shot-per-battle": "Shots per battle",
 						"shot-percent": "Percentage of shots",
 						"shots": "Shots",
-						"tank": "Tank"
+						"tank": "Tank",
+						"avgDisp": "AVG",
+						"movingAvgDispersion": "Moving AVG",
+						"movingProcentileDispersion": "Moving procentile"
 					},
 					"battlePerDate": "Battle by date",
 					"battlePerMap": "Battle by map",
@@ -41,21 +44,27 @@
 					"shotPerDensity": "Density by dispersion",
 					"shotPerDispersion": "Distribution by dispersion",
 					"shotPerMap": "Shot by map",
-					"shotPerTank": "Shot by tank"
+					"shotPerTank": "Shot by tank",
+					"avgDispersion": "Average dispersion",
+					"movingAvgDispersion": "Moving average dispersion",
+					"movingProcentileDispersion": "Moving procentile"
 				},
 				"group": {
 					"battles": "Battles",
 					"dispersion-aimingcircle": "Dispersion",
 					"players": "Players",
 					"shot-distance": "Shooting distance",
-					"shots": "Shots"
+					"shots": "Shots",
+					"experimantal": "Experimental"
 				},
 				"settings": {
 					"Bar": "Bar",
 					"Line": "Line",
 					"axes-variant": {
 						"absolute": "Absolute",
-						"relative": "Relative"
+						"relative": "Relative",
+						"date": "Date",
+						"index": "Index"
 					},
 					"axes-y": "Y-Axis",
 					"chartVariant": "Graph type",
@@ -88,7 +97,10 @@
 						"sec-5": "5 seconds",
 						"week": "Week",
 						"year": "Year"
-					}
+					},
+					"axes-x": "X-Axis",
+					"countStep": "Count in group",
+					"windowSize": "Window size"
 				}
 			},
 			"max-charts": "Maximum charts",
@@ -113,7 +125,10 @@
 					"tankId": "Tank",
 					"tankLvl": "Tank's level",
 					"tankNation": "Tank's nation",
-					"tankType": "Tank's type"
+					"tankType": "Tank's type",
+					"aimingCircleSize": "Aim circle size",
+					"shellDispersionResult": "Hit dispersion",
+					"shotDistance": "Shoot distance"
 				},
 				"filter": {
 					"clan": {
@@ -155,6 +170,12 @@
 						"name": "name",
 						"search": "Search:",
 						"tankType": "Tank type"
+					},
+					"aimingCircleSize": {
+						"select-label": "Setup aiming circle size relative to the base dispersion"
+					},
+					"shellDispersionResult": {
+						"select-label": "Setup permissible section of the projectile hit"
 					}
 				}
 			},
@@ -194,22 +215,23 @@
 		"units": {
 			"distance": "m",
 			"speed": "m/s"
-		}
+		},
+		"setup": "Setup"
 	},
 	"donate": {
-		"donate": "",
-		"dont-show": "",
-		"hi": "",
-		"later": "",
-		"line-1": "",
-		"line-2": "",
-		"line-3": "",
-		"result": "",
-		"sorry": "",
+		"donate": "Donate",
+		"dont-show": "Don't show again",
+		"hi": "Hello",
+		"later": "Later",
+		"line-1": "My name is Andrei, I am one of the developers of the mod, and I see you have been visiting our site for {0} days, it seems you liked it",
+		"line-2": "The mod is completely free and the site contains no annoying ads.",
+		"line-3": "If you have the opportunity and desire, you can support us with a donation",
+		"result": "Thanks!",
+		"sorry": "I'm sorry for distracting",
 		"toast": {
-			"line-1": "",
-			"line-2": "",
-			"line-3": ""
+			"line-1": "Hey",
+			"line-2": "Hello",
+			"line-3": "<span>Click here -></span> <button class=\"btn-flat toast-action\">here</button>"
 		}
 	},
 	"download": {

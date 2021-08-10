@@ -22,6 +22,9 @@
 						"shot-per-battle": "Выстрелы за бой",
 						"shot-percent": "Процент выстрелов",
 						"shots": "Выстрелы",
+						"movingAvgDispersion": "Скользящее среднее",
+						"movingProcentileDispersion": "Скользящее среднее",
+						"avgDisp": "Среднее",
 						"tank": "Танк"
 					},
 					"battlePerDate": "Бои от даты",
@@ -41,23 +44,30 @@
 					"shotPerDensity": "Плотность от разброса",
 					"shotPerDispersion": "Распределение от разброса",
 					"shotPerMap": "Выстрелы от карты",
-					"shotPerTank": "Выстрелы от танка"
+					"movingAvgDispersion": "Скользящее среднее распредение разброса",
+					"movingProcentileDispersion": "Скользящий процентиль распредения разброса",
+					"avgDispersion": "Среднее распредение разброса",
+					"shotPerTank": "Выстрелы по танку"
 				},
 				"group": {
 					"battles": "Бои",
 					"dispersion-aimingcircle": "Разброс и сведение",
 					"players": "Игроки",
 					"shot-distance": "Дистанция стрельбы",
-					"shots": "Выстрелы"
+					"shots": "Выстрелы",
+					"experimantal": "Эксперементальные"
 				},
 				"settings": {
 					"Bar": "Столбик",
 					"Line": "Линия",
 					"axes-variant": {
 						"absolute": "Абсолютная",
-						"relative": "Относительная"
+						"relative": "Относительная",
+						"index": "Индекс",
+						"date": "Дата"
 					},
 					"axes-y": "Ось Y",
+					"axes-x": "Ось X",
 					"chartVariant": "Тип графика",
 					"limit": {
 						"all": "Все",
@@ -88,7 +98,9 @@
 						"sec-5": "5 секунд",
 						"week": "Неделя",
 						"year": "Год"
-					}
+					},
+					"windowSize": "Ширина окна",
+					"countStep": "Кол-во элементов"
 				}
 			},
 			"max-charts": "Максимум графиков",
@@ -113,7 +125,10 @@
 					"tankId": "Танк",
 					"tankLvl": "Уровень танка",
 					"tankNation": "Нация танка",
-					"tankType": "Тип танка"
+					"tankType": "Тип танка",
+					"shellDispersionResult": "Разброс попадания",
+					"shotDistance": "Дистанция стрельбы",
+					"aimingCircleSize": "Сведение на момент выстрела"
 				},
 				"filter": {
 					"clan": {
@@ -155,6 +170,12 @@
 						"name": "Название",
 						"search": "Поиск:",
 						"tankType": "Тип"
+					},
+					"shellDispersionResult": {
+						"select-label": "Настрой допустимую секцию попадания снаряда"
+					},
+					"aimingCircleSize": {
+						"select-label": "Настрой размер сведения относительно базового разброса"
 					}
 				}
 			},
@@ -191,6 +212,7 @@
 		"done": "Готово",
 		"name": "Название:",
 		"select": "Выбрать",
+		"setup": "Настроить",
 		"units": {
 			"distance": "м",
 			"speed": "м/с"
