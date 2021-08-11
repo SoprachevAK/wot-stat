@@ -1,1 +1,11 @@
 .DS_Store
+.vscode
+.idea
+
+#mod
+release/
+WorldOfTanks-Decompiled/
+venv/
+*.pyc
+
+crypto.py
