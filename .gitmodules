@@ -1,0 +1,7 @@
+[submodule "mod/BigWorldPlaceholder"]
+	path = mod/BigWorldPlaceholder
+	url = https://github.com/SoprachevAK/BigWorldPlaceholder.git
+
+[submodule "mod/WorldOfTanks-Decompiled"]
+	path = mod/WorldOfTanks-Decompiled
+	url = https://github.com/StranikS-Scan/WorldOfTanks-Decompiled.git
