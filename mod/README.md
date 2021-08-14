@@ -7,11 +7,11 @@
 1. Склонировать репозиторий с подмодулями (`git clone --recursive https://github.com/SoprachevAK/wot-stat.git`)
    * **WorldOfTanks-Decompiled** - исходный код клиента танков
    * **BigWorldPlaceholder** - заглушки функций библиотеки движка, объявлены только те, которые были нужны мне
-2. Открыть текущую директорию через PyCharm (File->Open)
-3. Отметить ПКМ -> Mark Directory as -> Sources Root по папкам
-   * /WorldOfTanks-Decompiled/source/res/scripts/client
-   * /WorldOfTanks-Decompiled/source/res/scripts/common
-   * /BigWorldPlaceholder
+2. Открыть текущую директорию через PyCharm (*File->Open*)
+3. Отметить следующие папки как корень исходников (*ПКМ -> Mark Directory as -> Sources Root*)
+   * `/WorldOfTanks-Decompiled/source/res/scripts/client`
+   * `/WorldOfTanks-Decompiled/source/res/scripts/common`
+   * `/BigWorldPlaceholder`
 4. Готово. Теперь в IDE будет работать подсветка синтаксиса и подсказка кода.
 
 ## Сборка мода
