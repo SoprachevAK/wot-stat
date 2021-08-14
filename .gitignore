@@ -3,6 +3,7 @@
 .idea
 
 #mod
+mod/bigworld/
 release/
 WorldOfTanks-Decompiled/
 venv/

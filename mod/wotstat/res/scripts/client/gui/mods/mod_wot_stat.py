@@ -9,7 +9,7 @@ import battlereplay
 from vehicle_systems.tankStructure import TankPartNames
 from gui import systemmessages
 
-from wot_stat.asyncRsponce import post_async
+from wot_stat.asyncResponse import post_async
 from wot_stat.config import Config
 from wot_stat.wotApiProvider import wotApiProvider
 from wot_stat.modAutoUpdate import update_game_version, update_mod_version

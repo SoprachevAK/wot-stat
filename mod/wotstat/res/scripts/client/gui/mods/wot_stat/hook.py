@@ -1,8 +1,4 @@
-# -*- coding: utf-8 -*-
-
-
-__author__ = 'StranikS_Scan'
-__version__ = 'V1.0 P2.7 W1.2.0 23.11.2018'
+﻿# -*- coding: utf-8 -*-
 
 
 import BigWorld

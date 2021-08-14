@@ -1,12 +1,10 @@
-
-
 import os
 import shutil
 import json
 import BigWorld
 
 from helpers import getShortClientVersion
-from asyncRsponce import get_async
+from asyncResponse import get_async
 
 
 def num_game_version():

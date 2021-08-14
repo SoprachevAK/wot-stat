@@ -1,6 +1,6 @@
 <root>
     <id>mod.wot_stat</id>
-    <version>0.0.7</version>
+    <version>0.0.8</version>
     <name>wot_stat</name>
     <description>Collect statistics</description>
 </root>
