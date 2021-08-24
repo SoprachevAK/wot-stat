@@ -4,7 +4,7 @@
 ## Структура 1.0.0.0
 Задача [eventLogger](wotstat/res/scripts/client/gui/mods/wot_stat/logger/eventLogger.py) -- создавать события [events](wotstat/res/scripts/client/gui/mods/wot_stat/logger/events.py) и добавлять их в [battleEventSession](wotstat/res/scripts/client/gui/mods/wot_stat/logger/battleEventSession.py).
 
-[BattleEventSession](wotstat/wotstat/res/scripts/client/gui/mods/wot_stat/logger/battleEventSession.py) группирует события и раз в N=5 секунд отправляет их на сервер. Каждый бой создаётся новый экземпляр BattleEventSession(Events.OnEndLoad()), все события внутри этого боя отправляют через этот экземпляр. Экземпляр завершает своё существование событием Events.OnBattleResult().
+[BattleEventSession](wotstat/wotstat/res/scripts/client/gui/mods/wot_stat/logger/battleEventSession.py) группирует события и раз в N=5 секунд отправляет их на сервер. Каждый бой создаётся новый экземпляр `BattleEventSession(Events.OnEndLoad())`, все события внутри этого боя отправляют через этот экземпляр. Экземпляр завершает своё существование событием `Events.OnBattleResult()`.
 
 Все остальные файлы служебные и не выполняют ключевой роли. 
 
