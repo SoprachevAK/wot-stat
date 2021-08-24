@@ -38,11 +38,11 @@ def update_mod_version(url, mod_name, current_version, on_start_update=None, on_
         global new_version
 
         gameVersion = num_game_version()
-        currentMod = os.path.join(os.path.abspath(
+        newMod = os.path.join(os.path.abspath(
             './mods/'), gameVersion, mod_name + '_' + new_version + '.wotmod')
-
-        with open(currentMod, "wb") as f:
-            f.write(res)
+        if not os.path.exists(newMod):
+            with open(newMod, "wb") as f:
+                f.write(res)
 
         if on_updated:
             on_updated(new_version)
