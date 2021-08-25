@@ -15,13 +15,13 @@ class Event:
 
 class OnEndLoad(Event):
 
-    def __init__(self, ArenaTag, ArenaID, Base, PlayerName, PlayerBDID, PlayerClan, TankTag, TankType, TankLevel,
+    def __init__(self, ArenaTag, ArenaID, Team, PlayerName, PlayerBDID, PlayerClan, TankTag, TankType, TankLevel,
                  GunTag, StartDis, SpawnPoint, TimerToStart, BattleMode, GameVersion, ModVersion):
         Event.__init__(self, 'OnEndLoad')
 
         self.ArenaTag = ArenaTag
         self.ArenaID = ArenaID
-        self.Base = Base
+        self.Team = Team
         self.PlayerName = PlayerName
         self.PlayerBDID = PlayerBDID
         self.PlayerClan = PlayerClan

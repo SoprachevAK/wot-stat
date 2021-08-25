@@ -91,7 +91,7 @@ class EventLogger:
 
         onEndLoad = OnEndLoad(ArenaTag=player.arena.arenaType.geometry,
                               ArenaID=player.arenaUniqueID,
-                              Base=None,
+                              Team=None, #TODO
                               PlayerName=player.name,
                               PlayerBDID=player.arena.vehicles[player.playerVehicleID]['accountDBID'],
                               PlayerClan=player.arena.vehicles[player.playerVehicleID]['clanAbbrev'],
@@ -101,7 +101,7 @@ class EventLogger:
                               GunTag=player.vehicleTypeDescriptor.gun.name,
                               StartDis=player.vehicleTypeDescriptor.gun.shotDispersionAngle * shot_disp_multiplier_factor,
                               SpawnPoint=vector(player.getOwnVehiclePosition()),
-                              TimerToStart=0,
+                              TimerToStart=0, #TODO
                               BattleMode=arenaTags[player.arena.bonusType],
                               GameVersion=readClientServerVersion()[1],
                               ModVersion=config.get('version')
