@@ -6,6 +6,7 @@ from VehicleEffects import DamageFromShotDecoder
 from vehicle_systems.tankStructure import TankPartNames
 from Math import Matrix, Vector3
 from PlayerEvents import g_playerEvents
+from functools import partial
 
 from events import OnEndLoad, OnShot, OnBattleResult
 from battleEventSession import BattleEventSession
@@ -16,8 +17,9 @@ from .utils import *
 
 
 class EventLogger:
-    old_event_sessions = {}
-    event_session = None  # type: BattleEventSession
+    arenas_id_wait_battle_result = []
+    old_battle_event_sessions = {}
+    battle_event_session = None  # type: BattleEventSession
     player = None  # type: BigWorld.player()
 
     temp_shot = OnShot()
@@ -53,6 +55,8 @@ class EventLogger:
 
         g_playerEvents.onBattleResultsReceived += self.on_battle_results_received
 
+        self.battle_result_cache_checker()
+
     def __del__(self):
         wotHookEvents.remove_listener('PlayerAvatar.enableServerAim', self.on_enable_server_aim)
         wotHookEvents.remove_listener('PlayerAvatar.onEnterWorld', self.on_enter_world_wot)
@@ -72,14 +76,14 @@ class EventLogger:
 
     def on_enter_world_wot(self, obj, *a):
         print_debug("on_enter_world_wot")
-        if self.event_session:
-            self.old_event_sessions[self.event_session.arenaID] = self.event_session
+        if self.battle_event_session:
+            self.old_battle_event_sessions[self.battle_event_session.arenaID] = self.battle_event_session
 
-        self.event_session = None
+        self.battle_event_session = None
 
     def update_targeting_info(self, obj, turretYaw, gunPitch, maxTurretRotationSpeed, maxGunRotationSpeed,
                               shot_disp_multiplier_factor, *a):
-        if self.event_session or BattleReplay.isPlaying():
+        if self.battle_event_session or BattleReplay.isPlaying():
             return
 
         print_debug("______INIT______")
@@ -88,6 +92,8 @@ class EventLogger:
         player = self.player
 
         player.enableServerAim(True)
+
+        print_log('position ' + str(player.getOwnVehiclePosition()))
 
         onEndLoad = OnEndLoad(ArenaTag=player.arena.arenaType.geometry,
                               ArenaID=player.arenaUniqueID,
@@ -106,7 +112,8 @@ class EventLogger:
                               GameVersion=readClientServerVersion()[1],
                               ModVersion=config.get('version')
                               )
-        self.event_session = BattleEventSession(config.get('eventURL'), onEndLoad)
+        self.battle_event_session = BattleEventSession(config.get('eventURL'), onEndLoad)
+        self.arenas_id_wait_battle_result.append(player.arenaUniqueID)
 
     def update_gun_marker_server(self, obj, vehicleID, shotPos, shotVec, dispersionAngle, *a, **k):
         self.marker['serverPos'] = obj._VehicleGunRotator__getGunMarkerPosition(
@@ -193,28 +200,30 @@ class EventLogger:
             print_debug(self.shots)
             self.shots['order'].remove(abs(shotID))
             shot = self.shots['shots'].pop(abs(shotID))  # type: OnShot
-            self.event_session.add_event(shot.set_tracer_end(vector(position)))
+            self.battle_event_session.add_event(shot.set_tracer_end(vector(position)))
 
     # TODO: Декодировать больше результатов
-    # TODO: Найти хук который будет работать во время другого боя (получать результат не только непосредственно после завершения игры)
-    def on_battle_results_received(self, isPlayerVehicle, results):
-        print_debug('battle result received')
+    def process_battle_result(self, results):
 
-        if BattleReplay.isPlaying():
+        if not results['arenaUniqueID']:
             return
-        if not isPlayerVehicle or not results['arenaUniqueID']:
+
+        arenaID = results['arenaUniqueID']
+
+        if arenaID not in self.arenas_id_wait_battle_result:
             return
+
+        self.arenas_id_wait_battle_result.remove(arenaID)
 
         event_session = None
-        if self.event_session.arenaID == results['arenaUniqueID']:
-            event_session = self.event_session
-        if results['arenaUniqueID'] in self.old_event_sessions:
-            event_session = self.old_event_sessions.pop(results['arenaUniqueID'])
+        if self.battle_event_session.arenaID == arenaID:
+            event_session = self.battle_event_session
+        if arenaID in self.old_battle_event_sessions:
+            event_session = self.old_battle_event_sessions.pop(arenaID)
 
         if not event_session:
             return
 
-        print_debug(event_session)
         decodeResult = {}
         try:
             decodeResult['res'] = 'win' if results['personal']['avatar']['team'] == results['common']['winnerTeam'] else 'lose'
@@ -226,13 +235,35 @@ class EventLogger:
             print_log('cannot decode battle result\n' + str(e))
 
         event_session.end_event_session(OnBattleResult(
-            RAW=str(results),
             Result=decodeResult.get('res'),
             Credits=decodeResult.get('credits'),
             XP=decodeResult.get('xp'),
             Duration=decodeResult.get('duration'),
             BotsCount=decodeResult.get('bots_count')
         ))
+
+
+    def on_battle_results_received(self, isPlayerVehicle, results):
+        if not isPlayerVehicle or BattleReplay.isPlaying():
+            return
+
+        self.process_battle_result(results)
+
+    def battle_result_cache_checker(self):
+        BigWorld.callback(3, self.battle_result_cache_checker)
+
+        def result_callback(arenaID, code, result):
+            if code > 0:
+                self.process_battle_result(result)
+
+        if len(self.arenas_id_wait_battle_result) > 0:
+            arenaID = self.arenas_id_wait_battle_result.pop(0)
+            self.arenas_id_wait_battle_result.append(arenaID)
+            try: BigWorld.player().battleResultsCache.get(arenaID, partial(result_callback, arenaID))
+            except: pass
+
+
+
 
     def __own_effect_index(self):
         return map(lambda t: t.shell.effectsIndex, self.player.vehicleTypeDescriptor.gun.shots)
