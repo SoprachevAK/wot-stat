@@ -5,7 +5,7 @@ import os
 class Config:
     config = {}
     defaultParams = {
-        'version': '0.0.7',
+        'version': '0.0.8',
         'urlSend': 'https://wotstat.soprachev.com/api/mod/sendShot',
         'urlInit': 'https://wotstat.soprachev.com/api/mod/initBattle'
     }

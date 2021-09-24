@@ -4,10 +4,10 @@
 import json
 
 import BigWorld
-import battlereplay
+import BattleReplay
 
 from vehicle_systems.tankStructure import TankPartNames
-from gui import systemmessages
+from gui import SystemMessages
 
 from wot_stat.asyncResponse import post_async
 from wot_stat.config import Config
@@ -70,10 +70,10 @@ def init_mod():
     update_mod_version('https://wotstat.soprachev.com/cache/mod/version', 'mod.wotStat', config.get('version'),
                        on_start_update=lambda t: print_log(
                            'Found new mod version ' + t),
-                       on_updated=lambda t: systemmessages.pushMessage(
+                       on_updated=lambda t: SystemMessages.pushMessage(
                            '[WotStat] успешно обновлён до версии ' + t +
                            '. После перезапуска игры обновление будет применено',
-                           type=systemmessages.SM_TYPE.Warning))
+                           type=SystemMessages.SM_TYPE.Warning))
 
     wotApiProvider.add_listener('PlayerAvatar.onEnterWorld', on_enter_world)
     wotApiProvider.add_listener('PlayerAvatar.updateTargetingInfo', update_targeting_info)
@@ -106,7 +106,7 @@ def update_targeting_info(self, turretYaw, gunPitch, maxTurretRotationSpeed, max
 
     pre_init = False
 
-    if not battlereplay.isPlaying():
+    if not BattleReplay.isPlaying():
         print_log('----------OnINIT----------')
 
         data = {

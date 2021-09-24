@@ -3,8 +3,8 @@ import os
 import BigWorld
 
 from constants import ARENA_BONUS_TYPE
-from avatar import PlayerAvatar
-from vehiclegunrotator import VehicleGunRotator
+from Avatar import PlayerAvatar
+from VehicleGunRotator import VehicleGunRotator
 from helpers import getShortClientVersion
 from account_shared import readClientServerVersion
 
